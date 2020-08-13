@@ -9,7 +9,10 @@ app.get('/items', (req, res) => {
     const obj = Generator(seed).generateObject()
     const items = []
     for (let i = 0; i < n; i++) {
-        items.push(obj.generator())
+        items.push({
+            ...obj.generator(),
+            id: i
+        })
     }
     res.send(items)
 })
@@ -23,7 +26,10 @@ app.get('/items/:id', (req, res) => {
     for (let i = 0; i < id; i++) {
         obj.generator()
     }
-    res.send(obj.generator())
+    res.send({
+        ...obj.generator(),
+        id
+    })
 })
 
 app.listen(PORT, () => {
