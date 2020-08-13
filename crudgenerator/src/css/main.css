@@ -1,0 +1,29 @@
+* {
+    background: #f0f0f0 !important;
+}
+
+pre {
+    padding: 0;
+}
+
+.codes {
+    padding: 32px;
+}
+
+.codes pre code {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+/* .form .label {
+    margin: 8px;
+} */
+
+.form .input {
+    max-width: 264px;
+}

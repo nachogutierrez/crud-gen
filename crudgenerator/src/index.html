@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1 class='title'>Structure Generator</h1>
+
+    <div class='form'>
+      <label class="label">seed </label>
+      <input id='seed' type="text" class="input" placeholder="leave empty for a random seed...">
+      <button id='generate' class="button">generate</button>
+      <p>generated <strong id='generated-seed'>KldKscPykQzDuHDQ</strong></p>
+    </div>
+
+    <div class='codes columns'>
+      <div class='column'>
+        <p>type</p>
+        <pre>
+          <code id='type' class='json'></code>
+        </pre>
+      </div>
+  
+      <div class='column'>
+        <p>example</p>
+        <pre>
+          <code id='example' class='json'></code>
+        </pre>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script> 
+    <script src="js/generator.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
